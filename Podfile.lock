@@ -1,0 +1,14 @@
+PODS:
+  - MGTableViewDataDelegate (0.0.1)
+
+DEPENDENCIES:
+  - MGTableViewDataDelegate (from `.`)
+
+EXTERNAL SOURCES:
+  MGTableViewDataDelegate:
+    :path: .
+
+SPEC CHECKSUMS:
+  MGTableViewDataDelegate: b31a576a2af3f1cc921546ff0af49aa1b011fd1c
+
+COCOAPODS: 0.29.0

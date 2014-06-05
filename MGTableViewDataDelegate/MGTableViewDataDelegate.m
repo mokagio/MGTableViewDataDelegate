@@ -65,8 +65,11 @@ NSString * const MGTableViewDataDelegateRowDidSelectBlockKey = @"mg_row_block";
 
     cell.textLabel.text = cellDescription[MGTableViewDataDelegateRowTextKey];
     
-    if (cellDescription[MGTableViewDataDelegateRowTextColorKey])
+    if (cellDescription[MGTableViewDataDelegateRowTextColorKey]) {
         cell.textLabel.textColor = cellDescription[MGTableViewDataDelegateRowTextColorKey];
+    } else {
+        cell.textLabel.textColor = [UIColor darkTextColor];
+    }
     
     cell.detailTextLabel.text = cellDescription[MGTableViewDataDelegateRowDetailTextKey];
     

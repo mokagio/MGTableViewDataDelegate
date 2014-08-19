@@ -4,6 +4,7 @@
 NSString * const MGTableViewDataDelegateSectionHeaderKey = @"mg_section_header";
 NSString * const MGTableViewDataDelegateSectionFooterKey = @"mg_section_footer";
 NSString * const MGTableViewDataDelegateSectionRowsKey = @"mg_section_rows";
+NSString * const MGTableViewDataDelegateSectionRowsTextFontKey = @"mg_section_rows_text_font";
 
 NSString * const MGTableViewDataDelegateRowTextKey = @"mg_row_text";
 NSString * const MGTableViewDataDelegateRowTextColorKey = @"mg_row_text_color";
@@ -60,13 +61,18 @@ NSString * const MGTableViewDataDelegateRowDidSelectBlockKey = @"mg_row_block";
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    
+
+    NSDictionary *sectionDescription = self.sections[indexPath.section];
     NSDictionary *cellDescription = self.sections[indexPath.section][MGTableViewDataDelegateSectionRowsKey][indexPath.row];
 
     cell.textLabel.text = cellDescription[MGTableViewDataDelegateRowTextKey];
     
     if (cellDescription[MGTableViewDataDelegateRowTextColorKey])
         cell.textLabel.textColor = cellDescription[MGTableViewDataDelegateRowTextColorKey];
+
+    if (sectionDescription[MGTableViewDataDelegateSectionRowsTextFontKey]) {
+        cell.textLabel.font = sectionDescription[MGTableViewDataDelegateSectionRowsTextFontKey];
+    }
     
     cell.detailTextLabel.text = cellDescription[MGTableViewDataDelegateRowDetailTextKey];
     

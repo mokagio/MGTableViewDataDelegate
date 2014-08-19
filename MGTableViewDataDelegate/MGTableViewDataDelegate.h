@@ -14,6 +14,7 @@ typedef void (^MGTableViewDataDelegateVoidBlock)();
 extern NSString * const MGTableViewDataDelegateSectionHeaderKey;
 extern NSString * const MGTableViewDataDelegateSectionFooterKey;
 extern NSString * const MGTableViewDataDelegateSectionRowsKey;
+extern NSString * const MGTableViewDataDelegateSectionRowsTextFontKey;
 
 extern NSString * const MGTableViewDataDelegateRowTextKey;
 extern NSString * const MGTableViewDataDelegateRowTextColorKey;

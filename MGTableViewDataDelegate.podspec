@@ -17,15 +17,10 @@ Pod::Spec.new do |s|
 
   s.name         = "MGTableViewDataDelegate"
   s.version      = "0.0.1"
-  s.summary      = "A short description of MGTableViewDataDelegate."
+  s.summary      = "Something meaningful"
 
   s.description  = <<-DESC
-                   A longer description of MGTableViewDataDelegate in Markdown format.
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
+  Something meaningful.
                    DESC
 
   s.homepage     = "http://github.com/mokagio/MGTableViewDataDelegate"
@@ -39,8 +34,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = 'MIT (example)'
-  # s.license      = { :type => 'MIT', :file => 'FILE_LICENSE' }
+  s.license      = { :type => 'MIT' }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
